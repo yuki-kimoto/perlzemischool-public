@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- meta -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="icon" type="image/x-icon" href="/images/giblog-logo.png">
-<link rel="stylesheet" type="text/css" href="/css/common.css">
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <title>Perlゼミ オンライン・プログラミングスクール - Webシステム開発者への最短距離</title>
 
-<title>How to use Giblog😁 - mysite😄</title>
+<title>How to use Giblog😁 - Perlゼミ プログラミングスクール オンライン - Webシステム開発者への最短距離</title>
 <meta name="description" content="How to use Giblog.">
   </head>
   <body>
     <div class="container">
       <div class="header">
         <!-- header -->
-<div class="main">
-  <h1>
-    <a href="/">Giblog Web Site</a>
-  </h1>
+<script>
+  $(document).ready(function () {
+    $(window).on('resize', function () {
+      var width = $(window).width();
+      
+      if (width > 860) {
+        $('.header-menu').show();
+      }
+    });
+  });
+</script>
+
+<div class="header-inner">
+  <div class="header-left">
+    <div class="header-title">
+      <a href="/"><span style="letter-spacing:2px;">Perlゼミ プログラミングスクール オンライン</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <ul class="header-menu">
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ypMTx5XTh2KbsIgqgPMXNrC5Bo9FKRPVHM_o0jvrH_k28A/viewform" class="otoiawase" >フォーラム登録</a></li>
+      <li><a href="https://perlzemi.slack.com/" class="otoiawase" style="background-color:#009D82">ログイン</a></li>
+    </ul>
+  </div>
 </div>
 
       </div>
@@ -140,8 +160,16 @@ morbo serve.pl
         </div>
       </div>
       <div class="footer">
-        <!-- footer -->
-<a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
+        <div class="kimoto_system_link">
+  <a href="https://kimoto-system.co.jp/message">
+    <img src="https://kimoto-system.co.jp/images/kimoto-system-logo.png" alt="Perl Webシステム開発">
+    Perl Webシステム開発の木本システム
+  </a>
+</div>
+
+<div class="copyright">
+  Copyright © Yuki Kimoto
+</div>
 
       </div>
     </div>

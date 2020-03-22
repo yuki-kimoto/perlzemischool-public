@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- meta -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="icon" type="image/x-icon" href="/images/giblog-logo.png">
-<link rel="stylesheet" type="text/css" href="/css/common.css">
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <title>Perlゼミ オンライン・プログラミングスクール - Webシステム開発者への最短距離</title>
 
-<title>mysite😄</title>
-<meta name="description" content="How to use Giblog.">
+<title>Perlゼミ プログラミングスクール オンライン - Webシステム開発者への最短距離</title>
+<meta name="description" content="Perlゼミは、オンラインのプログラミングスクール。プログラミングをオンラインで0から学べる。質問したいときは、フォーラムで。一緒に学んでいる仲間が、質問に答えます。">
   </head>
   <body>
     <div class="container">
       <div class="header">
         <!-- header -->
-<div class="main">
-  <h1>
-    <a href="/">Giblog Web Site</a>
-  </h1>
+<script>
+  $(document).ready(function () {
+    $(window).on('resize', function () {
+      var width = $(window).width();
+      
+      if (width > 860) {
+        $('.header-menu').show();
+      }
+    });
+  });
+</script>
+
+<div class="header-inner">
+  <div class="header-left">
+    <div class="header-title">
+      <a href="/"><span style="letter-spacing:2px;">Perlゼミ プログラミングスクール オンライン</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <ul class="header-menu">
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ypMTx5XTh2KbsIgqgPMXNrC5Bo9FKRPVHM_o0jvrH_k28A/viewform" class="otoiawase" >フォーラム登録</a></li>
+      <li><a href="https://perlzemi.slack.com/" class="otoiawase" style="background-color:#009D82">ログイン</a></li>
+    </ul>
+  </div>
 </div>
 
       </div>
@@ -29,94 +49,125 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/">How to use Giblog😁</a></h2>
-<p>
-  How to use Giblog.
+    <p style="display:none">
+  Perlゼミは、オンラインのプログラミングスクール。プログラミングをオンラインで0から学べる。質問したいときは、フォーラムで。<br>一緒に学んでいる仲間が、質問に答えます。
 </p>
-<h3>Create web site</h3>
-<p>
-  Create web site by new command.
-</p>
-<pre>
-giblog new mysite
-</pre>
-<p>
-  Other prototypes is also available.
-</p>
-<pre>
-giblog new_website mysite
-giblog new_blog mysite
-</pre>
-<p>
-  After creating web site, change directory to mysite
-</p>
-<pre>
-cd mysite
-</pre>
-<h3>Add new entry</h3>
-<p>
-  Add new entry by add command.
-</p>
-<pre>
-giblog add
-</pre>
-<h3>Build</h3>
-<p>
-  Build web site.
-</p>
-<pre>
-giblog build
-</pre>
-<p>
-  If you want to customize build process, you open lib/Giblog/Command/Build.pm and edit run subroutine.
-</p>
-<h3>Serve</h3>
-<p>
-  You can serve your web site by morbo command if you have Mojolicious.
-</p>
-<pre>
-morbo serve.pl
-</pre>
-<p>
-  build command is automatically executed after editting files in templates directory.
-</p>
-<h3>Examples</h3>
-<p>
-  Some examples.
-</p>
-<blockquote>
-  This is a quote.
-</blockquote>
-<div>
-  Hello
+<div class="index-head">
+  <h2><a href="/">Perlゼミ - プログラミングスクール オンライン</a></h2>
+  <div>
+    <img src="/images/note-pc-boy.png">
+  </div>
+  <div class="index-head-description">
+    Perlゼミ プログラミングスクール オンラインは、Webシステム開発者への最短距離。<br>Webシステム開発者に必要なプログラミングとデザインの知識を0から学べる。<br>質問したいときは、フォーラムで。<br>一緒に学んでいる仲間が、質問に答えてくれます。
+  </div>
 </div>
-<h4>Sub header</h4>
-<pre>
-&lt;&gt;&lt;&gt;&lt;&gt;
-</pre>
-<pre>
-1 &gt; 2;
-1 &lt; 3;
-1 &amp; 3;
-</pre>
-<ul>
-  <li>Item1</li>
-  <li>Item2</li>
-  <li>Item3</li>
-</ul>
-<table>
-  <tr>
-    <th>Head1</th><th>Head2</th>
-  </tr>
-  <tr>
-    <td>Item1</td><td>Item2</td>
-  </tr>
-</table>
-<p>
-  <a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
-</p>
 <div>
-  <img src="/images/giblog-logo.png">
+  <div class="index-inner">
+    <div class="index-courses">
+      <h3>プログラミング基礎講座</h3>
+      <div class="index-courses-description">
+        Webシステム開発者になるためのプログラミング・デザイン・サーバー管理の基礎講座。プログラミング入門から初めて、テキスト処理、Linuxサーバー管理、Webデザイン制作、Webシステム開発が学べる。
+      </div>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/channel/UCbeAS6ZXpSKqkzb-Nykb0ZQ">
+            <div class="index-courses-item-title">動画でプログラミング入門講座</div>
+            <div class="index-courses-item-description">0から学べる動画によるプログラミング入門</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://tutorial.perlzemi.com/">
+            <div class="index-courses-item-title">Perlプログラミング入門講座</div>
+            <div class="index-courses-item-description">プログラミングPerlを使ったプログラミングの入門講座</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://text.perlzemi.com/">
+            <div class="index-courses-item-title">テキスト処理・正規表現入門講座</div>
+            <div class="index-courses-item-description">テキストの検索・置換・正規表現を自由に使いこなす講座</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://linux.perlzemi.com/">
+            <div class="index-courses-item-title">Linxuサーバー管理入門講座</div>
+            <div class="index-courses-item-description">Linuxコマンドを覚えて、サーバー運用の基礎を学ぶ講座</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://webdesign.perlzemi.com/">
+            <div class="index-courses-item-title">Webデザイン入門講座</div>
+            <div class="index-courses-item-description">WebデザインをHTML・CSSの基礎から学べる講座</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.perlzemi.com/">
+            <div class="index-courses-item-title">Webシステム開発入門講座</div>
+            <div class="index-courses-item-description">Web開発者のための入門講座。ECサイトの作成、SSLからドメイン管理まで</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://mariadb.perlzemi.com/">
+            <div class="index-courses-item-title">MariaDBデータベース入門</div>
+            <div class="index-courses-item-description">MariaDBを使ったデータベース・SQLの入門講座</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="index-features">
+  <div class="index-inner">
+    <h3>プログラミングであなたの仕事を楽にしよう<br>あなたの夢をかなえよう<br>工夫次第で、可能性は無限大。</h3>
+    <ul>
+      <li >
+        <a href="https://jp.giblog.net/">
+          あなたの情報をWebサイト・ブログで発信
+        </a>
+      </li>
+      <li >
+        <a href="https://tutorial.perlzemi.com/blog/20120326133275.html">
+          業務を速く終える定型処理の自動化
+        </a>
+      </li>
+      <li >
+        <a href="https://philosophy.perlzemi.com/">
+          プログラミングの歴史と哲学
+        </a>
+      </li>
+      <li >
+        <a href="https://laboratory.perlzemi.com/">
+          大学院レベルのソフトウェア研究
+        </a>
+      </li>
+      <li >
+        <a href="https://datascience.perlzemi.com/">
+          ビジネスデータをデータサイエンスで分析
+        </a>
+      </li>
+      <li >
+        <a href="https://deeplearning.perlzemi.com/">
+          <div class="index-features-title">ディープラーニングを使った人工知能</div>
+        </a>
+      </li>
+      <li >
+        <a href="https://bio.perlzemi.com/">
+          <div class="index-features-title">遺伝子を解析・バイオインフォマティクス</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="index-inner" style="max-width:860px;width;text-align:center">
+  <h3 style="margin:90px 0 20px 0;font-size:30px;letter-spacing:3px;">Perlゼミフォーラム</h3>
+  <div style="color:#111">
+    プログラムで、ここがどうしてもわからない。前へ進めない。<br>そんなときは、Perlゼミフォーラムをご活用ください。<br>共に学んでいる仲間が質問に答えてくれます。
+  </div>
+</div>
+<div class="index-start">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ypMTx5XTh2KbsIgqgPMXNrC5Bo9FKRPVHM_o0jvrH_k28A/viewform">フォーラムへ登録</a>
+</div>
+<div class="index-start">
+  <a href="https://perlzemi.slack.com/" style="background-color:#009D82">ログイン</a>
 </div>
 
   </div>
@@ -143,8 +194,16 @@ morbo serve.pl
         </div>
       </div>
       <div class="footer">
-        <!-- footer -->
-<a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
+        <div class="kimoto_system_link">
+  <a href="https://kimoto-system.co.jp/message">
+    <img src="https://kimoto-system.co.jp/images/kimoto-system-logo.png" alt="Perl Webシステム開発">
+    Perl Webシステム開発の木本システム
+  </a>
+</div>
+
+<div class="copyright">
+  Copyright © Yuki Kimoto
+</div>
 
       </div>
     </div>
